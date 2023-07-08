@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat-map</title>
+    <link rel="stylesheet" href="{% static 'stylecssfiles/seatmap.css' %}">
+    <script src="https://kit.fontawesome.com/7836bbfcbe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div class="movie-container">
+          <label>Pick a movie:</label>
+          <select id="movie">
+            <option value="10">Zara Hatke Zara Bachke</option>
+            <option value="12">Pathan</option>
+            <option value="8">Bholaa</option>
+            <option value="9">Jhon Wick 4</option>
+          </select>
+        </div>
+    
+        <ul class="showcase">
+          <li>
+            <div class="seat"></div>
+            <small>N/A</small>
+          </li>
+    
+          <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+          </li>
+    
+          <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+          </li>
+        </ul>
+    
+        <div class="container">
+          <div class="screen"></div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+    
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+          </div>
+    
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+    
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+    
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+          </div>
+        </div>
+    
+        <p class="text">
+          You have selected <span id="count">0</span> seats for a price of ₹ <span id="total">0</span>
+        </p>
+        <button style="height:45px; width: 180px; background-color: #00ADB5; border-radius: 20px;"><a href="/test" style="color:white; text-decoration: none; font-size: 30px;">SelectTime</a></button>
+
+
+
+
+
+
+
+    <script src="/static/jsfiles/seatmap.js"></script>
+</body>
+</html>

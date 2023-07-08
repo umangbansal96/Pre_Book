@@ -20,8 +20,14 @@ from myWebsite import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', views.login, name='login'),
-    path('', views.signUp, name ='signup'),
+    path('', views.home, name ='home'),
     path('signup/', views.signUp, name ='signup'),
+    path('home/', views.home, name ='home'),
+    path('discription/', views.discription, name ='discription'),
+    path('seatmap/', views.seatmap, name ='seatmap'),
+    path('test/', views.test, name ='test'),
+    path('name/', views.name, name ='test'),
+
 
 
 ]

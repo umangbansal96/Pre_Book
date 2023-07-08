@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Timings</title>
+    <style>
+        /* CSS styles for the page layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222831 ;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .show-timings {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .show-timing {
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f5f5f5;
+        }
+
+        .show-timing p {
+            margin: 0;
+        }
+
+        .show-timing .time {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .show-timing .book-button {
+            background-color: #00ADB5;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        p{
+            font-size: 20px;
+        }
+
+        .show-timing .book-button:hover {
+            background-color: #95E1D3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Show Timings</h1>
+        <div class="show-timings">
+            <div class="show-timing">
+                <p class="time">10:00 AM</p>
+                <p>Venue: Theater 1</p>
+                <button class="book-button" onclick="bookTicket('10:00 AM')"><a href="https://book.stripe.com/test_4gw4hC2az9fb5W08ww" style="text-decoration: none; color: white;"> Book Now</a></button>
+            </div>
+            <div class="show-timing">
+                <p class="time">11:30 AM</p>
+                <p>Venue: Theater 2</p>
+                <button class="book-button" onclick="bookTicket('2:00 PM')">Book Now</button>
+            </div>
+            <div class="show-timing">
+                <p class="time">12:00 PM</p>
+                <p>Venue: Theater 1</p>
+                <button class="book-button" onclick="bookTicket('6:00 PM')">Book Now</button>
+            </div>
+            <div class="show-timing">
+                <p class="time">1:30 PM</p>
+                <p>Venue: Theater 3</p>
+                <button class="book-button" onclick="bookTicket('9:00 PM')">Book Now</button>
+            </div>
+          <div class="show-timing">
+                <p class="time">4:00 PM</p>
+                <p>Venue: Theater 2</p>
+                <button class="book-button" onclick="bookTicket('2:00 PM')">Book Now</button>
+            </div>
+          <div class="show-timing">
+                <p class="time">6:30 PM</p>
+                <p>Venue: Theater 3</p>
+                <button class="book-button" onclick="bookTicket('2:00 PM')">Book Now</button>
+            </div>
+          <div class="show-timing">
+                <p class="time">9:00 PM</p>
+                <p>Venue: Theater 1</p>
+                <button class="book-button" onclick="bookTicket('2:00 PM')">Book Now</button>
+            </div><div class="show-timing">
+                <p class="time">10:30 PM</p>
+                <p>Venue: Theater 2</p>
+                <button class="book-button" onclick="bookTicket('2:00 PM')">Book Now</button>
+            </div>
+            <div class="show-timing">
+                <p class="time">11:00 PM</p>
+                <p>Venue: Theater 1</p>
+                <button class="book-button" onclick="bookTicket('9:00 PM')">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        // JavaScript function for booking the ticket
+        function bookTicket(time) {
+            // Add your booking logic here
+            alert("Ticket booked for " + time);
+        }
+    </script> -->
+</body>
+</html>

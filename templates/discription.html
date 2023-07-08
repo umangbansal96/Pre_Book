@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Description</title>
+    <style>
+        /* CSS styles for the page layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 30px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .event-image {
+            width: 100%;
+            max-height: auto;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border-radius: 40px;
+        }
+
+        .btn-book {
+            background-color: #4CAF50;
+            color: white;
+            padding: 30px 50px;
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
+            font-size: 30px;
+        }
+
+        .btn-book:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Event Description</h1>
+        {{argg}}
+        <img src="/static/movie1.png" alt="Event Image" class="event-image">
+        <p><strong>Title:</strong> Salford Studio Film Festival </p>
+        <p><strong>Date:</strong> June 1, 2023</p>
+        <p><strong>Time:</strong> 8:00 PM</p>
+        <p><strong>Venue:</strong> Example Theater</p>
+        <p>Experience the magic of cinema at our exciting film festival! Join us for a captivating showcase of diverse
+            films, thought-provoking discussions, and memorable cinematic moments. Don't miss this opportunity to
+            immerse yourself in the world of storytelling and celebrate the art of filmmaking.</p>
+        <a href="/seatmap"><button class="btn-book" onclick="bookTicket()">Book Now</button></a>
+    </div>
+
+    <!-- <script>
+        // JavaScript function for booking the ticket
+        function bookTicket() {
+            // Add your booking logic here
+            alert("Ticket booked successfully!");
+        }
+    </script> -->
+</body>
+
+</html>
